@@ -55,12 +55,14 @@ body
 	position: relative;
 	width: 750px;
 	
-	margin: 0 auto;		/* The auto here takes into account the body's div text-align */
+	margin: 2 auto;		/* The auto here takes into account the body's div text-align */
 	left: 0px;
 	top: 0px;
 
 	overflow:auto;
 	padding-bottom: 36px;	/* must be same height as the footer */
+	font-family: Segoe UI;
+	font-size: 1.2em;		/*h2 header style*/
 }
 
 #wrap 
@@ -210,29 +212,33 @@ a.mainLinkStyle:hover
 { 
 	color: #2A5E86; 		/* grey */
 	text-decoration: none; 
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: bold;
+	font-family: Segoe UI
 }
 
 a.portLinkStyle:link 
 { 
 	color: #2A5E86; 
 	text-decoration: none; 
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: bold;
+	font-family: Segoe UI
 }
 a.portLinkStyle:visited 
 { 
 	color: #2A5E86; 
 	text-decoration: none; 
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: bold;
+	font-family: Segoe UI
 }
 a.portLinkStyle:hover 
 { 
 	color: #fd7700;  		/* orange */
 	text-decoration: none; 
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: bold;
+	font-family: Segoe UI
 }
   
