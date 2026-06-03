@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Graham McIntyre - Course - Depth of field</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="Style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="wrap">
+	<img src="Top%20bar.png" alt="Graham McIntyre" vspace="0" border="0" align="top">
+		
+	<div id="menu"> 
+ 		<A href="Index.htm" onMouseOver="return HomeChangeImage()" onMouseOut= "return HomeChangeImageBack()" onMouseDown="return HomeHandleMDown()" onMouseUp="return HomeHandleMUp()">
+		<img name="homeJSButton" src="Home button rollover.bmp" width="127" height="28" border="0" alt="Home" style="float: left;" vspace="1">
+		</A> 
+		<A href="Portfolio.htm" onMouseOver="return PortChangeImage()" onMouseOut= "return PortChangeImageBack()" onMouseDown="return PortHandleMDown()" onMouseUp="return PortHandleMUp()">
+		<img name="portJSButton" src="Portfolio button rollover.bmp" width="127" height="28" border="0" alt="Porfolio" style="float: left;" vspace="1">
+		</A> 
+		<A href="CV.htm" onMouseOver="return CVChangeImage()" onMouseOut= "return CVChangeImageBack()" onMouseDown="return CVHandleMDown()" onMouseUp="return CVHandleMUp()">
+		<img name="cvJSButton" src="CV button rollover.bmp" width="127" height="28" border="0" alt="CV" style="float: left;" vspace="1" >
+		</A> 
+		<SCRIPT language="JavaScript" src="buttons.js"></SCRIPT> 
+    </div>
+
+	<span style="position: relative; left: 30px;">
+		<b><a class="mainLinkStyle" href="PortfolioCourse.htm"><< Back</a></b>
+	</span>
+
+	
+	<div id="textWrapper"> 
+	    <h1>Hardware Accelerated Depth-of-Field</h1>
+	    <br>
+	    <center>
+	      <img src="screenshot/full scene.png" alt="DOF3" vspace="0" border="0" align="center" width="675" height="404" > 
+	      <br><br>
+	      <img src="screenshot/dof1.png" alt="DOF1" vspace="0" border="0" align="left" width="355" height="308" > 
+	      <img src="screenshot/tri.png" alt="DOF4" vspace="0" border="0" align="right" width="330" height="362" ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	      <br>Image showing partial occlusion on the edge of the rifle in the foreground <br>
+	      <br><br>
+	      <img src="screenshot/dof2.png" alt="DOF2" vspace="0" border="0" align="center" width="483" height="348" >
+	      <br>
+	      Cube partially in focus
+	      <br>
+	     </center>
+	    <p>
+
+		In computer graphics, even to date it is usual to use what is referred to as a pinhole camera model. This is a camera
+		model where everything in the scene is in focus. Historically this model is used due to real time constraints. 
+		<br><br>
+		Non real time computer generated graphics (CGI) such as those sometimes produced for scenes in film can be produced
+		using ray tracing, and other techniques to capture camera phenomena such as depth-of-field. In particular depth of field
+		is important as it allows a photographer or director to direct attention to a certain part of the scene.
+		<br><br>
+		A real time simulation of accurate depth-of-field could not only add to the realism of virtual environments 
+		but smooth the transition between real video footage and CGI.
+
+		Much research has been done in the area of depth-of-field rendering for real time applications. I have managed to
+		further research into this area by developing a hardware accelerated algorithm which simulates partial occlusion 
+		and runs at real time frame rates. It supports a range of camera setups. The technique still needs some improvements
+		to the blending which is aided by a sobel filter.
+	 </p>
+	 <p>
+	 The demo program uses a camera based on a 35mm lens and allows adjusting of focal length, focal distance, apperture and 
+	 f-stop for the lens (Tip: I and 0 keys adjust the focal length which is the most useful if you are not used to technical terms)
+	 </p>
+	<!--
+	    <a class="mainLinkStyle" href="downloads/dof_4_2.zip" >Download demo here</a><br><br>
+	    <a class=mainLinkStyle href="https://dl.dropboxusercontent.com/u/33552650/dof_4_2.zip?dl=1">Alternate demo download link</a> <br>
+	-->
+    <span style="position: relative; left: 670px;"> <a class="mainLinkStyle" href="PortfolioCourse.htm"><< Back</a> </span> <br>
+	    <hr>
+	    <br>
+	</div>
+	
+	<div id="footer"> <span style="position: relative; top: 25%; font-size: .8em;">Updated June 2014</span> </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Graham McIntyre - Portfolio - Arkane Editors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="Style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="wrap">
+	<img src="Top%20bar.png" alt="Graham McIntyre" vspace="0" border="0" align="top">
+		
+	<div id="menu"> 
+  		<A href="Index.htm" onMouseOver="return HomeChangeImage()" onMouseOut= "return HomeChangeImageBack()" onMouseDown="return HomeHandleMDown()" onMouseUp="return HomeHandleMUp()">
+		<img name="homeJSButton" src="Home button rollover.bmp" width="127" height="28" border="0" alt="Home" style="float: left;" vspace="1">
+		</A> 
+		<A href="Portfolio.htm" onMouseOver="return PortChangeImage()" onMouseOut= "return PortChangeImageBack()" onMouseDown="return PortHandleMDown()" onMouseUp="return PortHandleMUp()">
+		<img name="portJSButton" src="Portfolio button rollover.bmp" width="127" height="28" border="0" alt="Porfolio" style="float: left;" vspace="1">
+		</A> 
+		<A href="CV.htm" onMouseOver="return CVChangeImage()" onMouseOut= "return CVChangeImageBack()" onMouseDown="return CVHandleMDown()" onMouseUp="return CVHandleMUp()">
+		<img name="cvJSButton" src="CV button rollover.bmp" width="127" height="28" border="0" alt="CV" style="float: left;" vspace="1" >
+		</A> 
+		<SCRIPT language="JavaScript" src="buttons.js"></SCRIPT> 
+    </div>
+
+	<span style="position: relative; left: 30px;">
+		<a class="mainLinkStyle" href="PortfolioPersonal.htm"><< Back	</a>
+	</span>
+
+	
+	<div id="textWrapper"> 
+	    <h1>Arkane Editors</h1>
+	    <p> I developed a suite containing two editors for my RPG game project. 
+	      The first editor is a graphical tool written using the engine and OpenGL to aid in map creation. 
+		Users can add river sections, hills, buildings, trees and bushes and even smaller items for dungeon map 
+	      creation. There is a mini map for quick navigation and a full screen preview. The tool also has a snapping grid to aid with placement, and a house interior designer, which allows buildings to be populated with furniture. You can also create quest packs and link them to things on the map. </p>
+	    <p> Behind the scenes the tool outputs a map file, XML and batch file for the texture packages to be built for the game to use. My texture atlasing tool packs these into texture DDS files which are stored inside a package file. </p>
+	    <center>
+	      <br>
+	      <img src="screenshot/arkane5.png" alt="Arkane editor pic here" vspace="0" border="0" align="top" width="680" height="400" ><br>
+	      <br>
+	      <img src="screenshot/arkane6.png" alt="Arkane editor pic here" vspace="0" border="0" align="top" width="600" height="480" ><br>
+	    </center>
+
+	    <p> The second editor allows you to add items, spells, creatures, item making recipes, 
+	      potion recipes and dialogue; these are contained in a pak file which can
+	     then be loaded by the game. The tools are intended to be used to catch problems 
+	      with the engine early in development, in addition to allowing designers to create the content. 
+	     The data tool is used for graphic file linking as well as statistics data entry for balancing. 
+	     It has helped me think about the game design in advance of implementation.</p>
+	    <center>
+	      <img src="screenshot/arkane4.png" alt="Arkane editor pic here" vspace="0" border="0" align="top" width="570" height="420" ><br>
+	      The data editor for adding items and game data <br>
+	      <br>
+	    </center>
+<!--
+	    <p> Both tools are packed into an installer which simplifies support and updating of the tools as work on them is ongoing. </p>
+	    <p> For building the source you need MS Visual Studio 2008 or Visual Studio 2013. </p>
+		Running the World Builder from source code has no requirements. Building the data tool under VS 2013 requires the extension for the
+				<a class="bigLinkStyle" href="http://www.microsoft.com/en-gb/download/details.aspx?id=40770" > MultiByte MFC Library</a>. </p>
+-->
+		<a class="mainLinkStyle" href="https://www.dropbox.com/s/nex8s3g7ode2hl2/ArkaneEd_083.zip?dl=1">Download the installer</a><br>
+<!--	
+	<a class="mainLinkStyle" href="https://www.dropbox.com/s/h6a8xplx4zkzy29/ArkaneEditorsSourcePackage.zip?dl=1">Download the source code</a><br>
+-->
+		<a class="mainLinkStyle" href="ArkaneDetails.htm">Game Details</a> 
+		<br>
+	    <span style="position: relative; left: 670px;"> <a class="mainLinkStyle" href="PortfolioPersonal.htm"><< Back</a> </span> 
+		<br>
+	    <hr>
+	    <br>
+  </div>
+
+  <div id="footer"> <span style="position: relative; top: 25%; font-size: .8em;">Updated June 2015</span> </div>
+
+</div>
+
+
+</body>
+
+</html>

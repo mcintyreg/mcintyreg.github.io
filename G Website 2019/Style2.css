@@ -1,0 +1,238 @@
+/* 
+	Main CSS Document for GM Portfolio Website
+	Nov 2010
+	Version 1.0
+
+	Oct 2015
+	Version 1.1
+	body props to fix text issue
+*/
+
+
+body 
+{
+	max-width: 1080px;
+	margin: 0 auto !important;
+	float: none !important;
+	
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	color: #3b3f42;
+	margin: 0px;
+	padding: 0px;
+
+/* Repeat background image (border either edge) */
+	background: url(Background2.png);
+	background-repeat: repeat-y ;
+	background-position: center;
+	background-color: #c2c4c4;
+
+	text-align: center; 	/* Most browers this centers images as well */
+	line-height: 150%;
+	height: 100%;
+}
+#tabletext
+{
+	font-size: .8em;
+	line-height: 150%;
+}
+
+#menu
+{
+	text-align: left; 	/* This is actually for images as well */
+	position: relative;
+	width: 750px;
+	margin: 0 auto;
+	border: 0px;
+	left: -19px;		/* Reduce this if more menu buttons are added */
+	top: 0px;
+}
+
+/* This is for the div around the main text */
+#textWrapper 
+{
+	text-align: left;
+	position: relative;
+	width: 750px;
+	
+	margin: 0 auto;		/* The auto here takes into account the body's div text-align */
+	left: 0px;
+	top: 0px;
+
+	overflow:auto;
+	padding-bottom: 36px;	/* must be same height as the footer */
+}
+
+#wrap 
+{
+	min-height: 100%;
+}
+
+
+#footer 
+{
+	text-align: center; 	/* This is actually for images as well */
+	color: #fe9103;
+	position: relative;
+	margin-top: -36px; 	/* negative value of footer height */
+	height: 36px;	
+	background: url(Bottombar.png);
+	background-position: center;
+	background-repeat: no-repeat;
+} 
+
+/* Opera Fix */
+body:before 
+{
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;
+}
+
+h1
+{
+	font-size: 1.6em;
+	background-color: #c2c4c4;
+	border-top: 8px solid #c2c4c4;
+	border-left: 4px solid #c2c4c4;
+	border-bottom: 8px solid #c2c4c4;
+}
+
+h2
+{
+	font-size: 2em;
+	text-align: center;
+}
+
+#padding
+{
+	height: 12px;	/*break*/
+}
+
+#highlight
+{
+	font-size: 1.2em;		/*h2 header style*/
+	font-weight: bold;
+	background-color: #5b6465;
+	padding-top: 3px;
+	padding-left: 8px;
+	padding-bottom: 3px;
+	color: #c2c4c4;
+}
+
+#textbackground
+{
+	background-color: #d5d5d5;
+	border-top: 1px solid #d5d5d5;
+	border-left: 5px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	
+} 
+
+.bigLinkStyle
+{ 
+	color: black; 
+	text-decoration: none; 
+}
+
+a.bigLinkStyle:link 
+{ 
+	color: #3b3f42; 
+	text-decoration: none; 
+}
+a.bigLinkStyle:visited 
+{ 
+	color: #3b3f42; 
+	text-decoration: none; 
+}
+a.bigLinkStyle:hover 
+{ 
+	color: #fd7700;  
+	text-decoration: none; 
+}
+
+
+.underPicLinkStyle
+{ 
+	color: #86AE66; 
+	text-decoration: none; 
+}
+
+a.underPicLinkStyle:link 
+{ 
+	color: #86AE66; 
+	text-decoration: none; 
+}
+a.underPicLinkStyle:visited 
+{ 
+	color: #86AE66; 
+	text-decoration: none; 
+}
+a.underPicLinkStyle:hover 
+{ 
+	color: #86AE66;  
+	text-decoration: none; 
+}
+
+.mainLinkStyle
+{ 
+	color: #2A5E86; 		/* grey */
+	text-decoration: none; 
+	font-size: 1em;
+	font-weight: bold;
+}
+
+a.mainLinkStyle:link 
+{ 
+	color: #2A5E86; 
+	text-decoration: none; 
+	font-size: 1em;
+	font-weight: bold;
+}
+a.mainLinkStyle:visited 
+{ 
+	color: #2A5E86; 
+	text-decoration: none; 
+	font-size: 1em;
+	font-weight: bold;
+}
+a.mainLinkStyle:hover 
+{ 
+	color: #fd7700;  		/* orange */
+	text-decoration: none; 
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.portLinkStyle
+{ 
+	color: #2A5E86; 		/* grey */
+	text-decoration: none; 
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+a.portLinkStyle:link 
+{ 
+	color: #2A5E86; 
+	text-decoration: none; 
+	font-size: 1.2em;
+	font-weight: bold;
+}
+a.portLinkStyle:visited 
+{ 
+	color: #2A5E86; 
+	text-decoration: none; 
+	font-size: 1.2em;
+	font-weight: bold;
+}
+a.portLinkStyle:hover 
+{ 
+	color: #fd7700;  		/* orange */
+	text-decoration: none; 
+	font-size: 1.2em;
+	font-weight: bold;
+}
+  

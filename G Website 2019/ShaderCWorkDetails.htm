@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Graham McIntyre - Portfolio - Shader Tool</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="Style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="wrap">
+	<img src="Top%20bar.png" alt="Graham McIntyre" vspace="0" border="0" align="top">
+		
+	<div id="menu"> 
+		<A href="Index.htm" onMouseOver="return HomeChangeImage()" onMouseOut= "return HomeChangeImageBack()" onMouseDown="return HomeHandleMDown()" onMouseUp="return HomeHandleMUp()">
+		<img name="homeJSButton" src="Home button rollover.bmp" width="127" height="28" border="0" alt="Home" style="float: left;" vspace="1">
+		</A> 
+		<A href="Portfolio.htm" onMouseOver="return PortChangeImage()" onMouseOut= "return PortChangeImageBack()" onMouseDown="return PortHandleMDown()" onMouseUp="return PortHandleMUp()">
+		<img name="portJSButton" src="Portfolio button rollover.bmp" width="127" height="28" border="0" alt="Porfolio" style="float: left;" vspace="1">
+		</A> 
+		<A href="CV.htm" onMouseOver="return CVChangeImage()" onMouseOut= "return CVChangeImageBack()" onMouseDown="return CVHandleMDown()" onMouseUp="return CVHandleMUp()">
+		<img name="cvJSButton" src="CV button rollover.bmp" width="127" height="28" border="0" alt="CV" style="float: left;" vspace="1" >
+		</A> 
+		<SCRIPT language="JavaScript" src="buttons.js"></SCRIPT> 
+    </div>
+
+	<span style="position: relative; left: 30px;">
+		<a class="mainLinkStyle" href="PortfolioCourse.htm"><< Back</a>
+	</span>
+
+	
+	<div id="textWrapper"> 
+	    <h1>Shader Coursework Application</h1>
+	    <center>
+	      <img src="screenshot/spm04.jpg" alt="Shader CWork Pic here" vspace="0" border="0" align="top" width="470" height="320" > 
+	      <br>Parallax mapping using raytracer<br><br>
+	      <img src="screenshot/spm03.jpg" alt="Shader CWord Pic here" vspace="0" border="0" align="top" width="470" 	height="320" > 
+		<br>Texture mapped cube (fur texture)<br>
+	      <img src="screenshot/spm03b.jpg" alt="Shader CWord Pic here" vspace="0" border="0" align="top" width="470" 	height="320" > 
+		<br>Parallax shading on cube to create more realistic fur<br>
+	    </center>
+	    <p> This project was developed to focus on development of hardware accelerated algorithms. I learnt a lot about 
+		balancing the use of GPU's and CPU's for rendering on the course.  
+	    </p>
+		<p>
+		I implemented bump mapping and variations on parallax mapping, the best of which used ray tracing to take a 
+		2D image and make it look 3D. From this work I implemented parallax occlusion mapping for my other 3d demo. 
+		Win32 code was used to make texture loading easier via a dialogue. The open source jpeg lib was used in order 
+		to provide suppport for this format but other image import routines were written by myself. I managed to produce
+		a better simulation of fur with the shader as you can see from screenshots above.
+		</p>
+	    <p>I also made use of tools such as Shader designer to help 
+	      with debugging, and ATI's normal map generator for bump mapping textures. 
+	      Looking back it would have made more sense to use code to produce these textures. </p>
+	    <br>
+	    <span style="position: relative; left: 670px;"> <a class="mainLinkStyle" href="PortfolioCourse.htm"><< Back</a> </span> 
+	    <br><br>
+	</div>
+	
+	<div id="footer"> <span style="position: relative; top: 25%; font-size: .8em;">Updated June 2014</span> </div>
+</div>
+
+</body>
+
+</html>

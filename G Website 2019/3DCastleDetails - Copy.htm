@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Graham McIntyre - Portfolio - 3D Castle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="Style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!--[if IE]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+
+<![endif]-->
+
+	<div id="wrap">
+		<img src="Top%20bar.png" alt="Graham McIntyre" vspace="0" border="0" align="top">
+		
+  <div id="menu"> 
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+			codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" 
+			width="127" height="29" hspace="0" vspace="0" >
+      <param name="movie" value="Home%20button.swf">
+      <param name="quality" value="high">
+      <embed src="Home%20button.swf" width="127" height="29" hspace="0" vspace="0"  						quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"> 
+      </embed></object>
+    <span style="position: relative; left: -5px;"> 
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 									codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" 				width="127" height="29" vspace="0">
+      <param name="movie" value="Portfolio%20button.swf">
+      <param name="quality" value="high">
+      <embed src="Portfolio%20button.swf" width="127" height="29" vspace="0" quality="high" 						pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" 					scale="exactfit"></embed></object>
+    </span> <span style="position: relative; left: -10px;"> 
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 	
+			codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" 
+			width="127" height="29" hspace="0" vspace="0" >
+      <param name="movie" value="CV%20button.swf">
+      <param name="quality" value="high">
+      <embed src="CV%20button.swf" width="127" height="29" hspace="0" vspace="0"  							quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"> 
+      </embed> </object>
+    </span> </div>
+
+	<span style="position: relative; left: 330px;">
+		<b><a class="mainLinkStyle" href="PortfolioCurrent.htm"><< Back</a></b>
+	</span>
+
+	
+  <div id="textWrapper"> 
+    <h1>3D Castle Scene</h1>
+    <br>
+    <center>
+      <img src="screenshot/castle1.jpg" alt="3D Demo screen1 here" vspace="0" border="0" align="center" width="370" height="320" > 
+      <br>Graphics options launch dialogue <br>
+      <br>
+      <img src="screenshot/newcastle2.png" alt="3D Demo screen2 here" vspace="0" border="0" align="center" width="470" height="320" ><br>
+      HDR effects using frame buffer and shaders <br>
+      <br>
+      <img src="screenshot/castle10.png" alt="3D Demo screen2 here" vspace="0" border="0" align="center" width="470" height="320" ><br>
+      Parallax occlusion mapping <br>
+      <br>
+      <img src="screenshot/newcastle3.png" alt="3D Demo screen2 here" vspace="0" border="0" align="center" width="470" height="320" ><br>
+      Particle effects 
+    </center>
+    <p> On launch the demo provides options to allow customising of effects. Features may be disabled if they are not supported on the PC the demo is running on. The demo has been developed in order to run on a wide range of PC setups 
+      at decent framerates. In order to acheive this I have kept 
+      the number of textures used to a minimum by packing them together with a seperate tool. The shader effects are far from optimal. </p>
+    <p> The code was developed from scratch without a 3D engine, with the following exceptions:<br>
+    <ul>
+      <li>Flocking - This was based on code from Game Programming Gems 1 (Steven 
+        Woodcock's Article) 
+      <li>Font Code - This was based on code in a NeHe OpenGL tutorial 
+      <li>Textures - Many of these were not made by myself (e.g parallax 
+        textures are from <a class=mainLinkStyle href="http://graphics.cs.brown.edu/games/SteepParallax/index.html">McGuire's 
+        page on parallax mapping</a>) 
+    </ul>
+    </p>
+    <p> Included in the demo is an implementation of some of the work I completed as part 
+      of a shader course (parallax mapping), in a more realistic game environment. 
+      The mapping uses a simple ray tracer to improve offset by 
+      tracing the ray back toward the viewer. Other effects include a water shader which 
+      requires real time rendering to texture and HDR (High dynamic range) effects on the sky box and sun. In the first 
+      room a torch and smoke canister are simulated using a simple particle system and shaders, 
+      multi-texturing is used for lighting and cube mapping is used to render a hovering cube. </p>
+    <p> The water simulation is implemented using shaders. In addition to 
+      a standard texture it uses a height map, DUDV map and a reflection texture. Highlights are also calculated 
+      based on where the sun is. </p>
+    <p> Bloom effects were created by rendering the scene with a shader which 
+      attempts to extract brighter areas and then convolves the image using a gaussian 
+      blur. This result is then rendered to a texture and rendered to screen using an additive operation after it has been tone 
+      mapped. The tone mapping is done in a seperate shader. I also experimented 
+      with bilinear filtering of the texture at different levels to create a blur, 
+      although this doesn't seem to improve the effect much. </p>
+    <p> Fauna is rendered using 3D models, although I originally experimented 
+      using billboard techniques (which is still used for particle rendering). 
+      3D objects use a sorted container to render from front to back; 
+      this is a rather crude method of visibility rendering, a better solution would 
+      have been to use a BSP/quad tree which would theoretically improve the frame rate hits. </p>
+    <p> The demo was tested on a recent mid-range graphics card and some older ones (as of January 2013). The recent 
+      ATI card can run the demo at 60fps, this drops slightly in the outside environment. The older card (Geforce 6 series) has trouble
+    rendering the full room parallax above 17fps. The outside scene renders at slightly better framerates. The performance 
+      issues outside have been found to be down to the rendering of grass and trees, probably 
+      due to a mixture of not using vertex buffer to render the models and some of them 
+      being made up from too many polygons (also may be the visibility rendering 
+      techniques used). </p>
+    <p> Currently I am experimenting with vortex particles along with some shader effects to improve 
+      the smoke effects. </p>
+    <a class=mainLinkStyle href="downloads/glCastle_src.rar">Download source here</a> <br>
+    <a class=mainLinkStyle href="downloads/gm_demov11.zip">Download demo here</a> <br>
+    <br>
+    <span style="position: relative; left: 670px;"> <a class="mainLinkStyle" href="PortfolioCurrent.htm"><< 
+    Back</a> </span> <br>
+    <hr>
+    <br>
+  </div>
+	
+</div>
+
+<div id="footer"> <span style="position: relative; top: 25%; font-size: .8em;">Updated 
+  June 2014</span> </div>
+
+</body>
+
+</html>

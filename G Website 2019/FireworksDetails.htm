@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Graham McIntyre - Portfolio - Fireworks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="Style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="wrap">
+	<img src="Top%20bar.png" alt="Graham McIntyre" vspace="0" border="0" align="top">
+		
+	<div id="menu"> 
+ 		<A href="Index.htm" onMouseOver="return HomeChangeImage()" onMouseOut= "return HomeChangeImageBack()" onMouseDown="return HomeHandleMDown()" onMouseUp="return HomeHandleMUp()">
+		<img name="homeJSButton" src="Home button rollover.bmp" width="127" height="28" border="0" alt="Home" style="float: left;" vspace="1">
+		</A> 
+		<A href="Portfolio.htm" onMouseOver="return PortChangeImage()" onMouseOut= "return PortChangeImageBack()" onMouseDown="return PortHandleMDown()" onMouseUp="return PortHandleMUp()">
+		<img name="portJSButton" src="Portfolio button rollover.bmp" width="127" height="28" border="0" alt="Porfolio" style="float: left;" vspace="1">
+		</A> 
+		<A href="CV.htm" onMouseOver="return CVChangeImage()" onMouseOut= "return CVChangeImageBack()" onMouseDown="return CVHandleMDown()" onMouseUp="return CVHandleMUp()">
+		<img name="cvJSButton" src="CV button rollover.bmp" width="127" height="28" border="0" alt="CV" style="float: left;" vspace="1" >
+		</A> 
+		<SCRIPT language="JavaScript" src="buttons.js"></SCRIPT> 
+    </div>
+
+	<span style="position: relative; left: 30px;">
+		<a class="mainLinkStyle" href="PortfolioPersonal.htm"><< Back	</a>
+	</span>
+
+	
+	<div id="textWrapper"> 
+	    <h1>Fireworks Demo</h1>
+	    <br>
+	    <center>
+	      <img src="screenshot/shot7.png" alt="Fireworks pic here" vspace="0" border="0" align="top" width="470" height="320" > 
+		<br>Particle systems<br><br>
+
+	    </center>
+	    <p> XML files allow specification for any number of emitters, and specification 
+	      of start times, duration and colour information, I used TinyXML to aid with parsing. Currently only two types 
+	      of emitter are supported (fountains and rockets) but code should allow easy 
+	      addition of more types and/or parameters for the XML format. </p>
+	    <p> The systems are rendered in the centre of the world and a skybox was used 
+	      to render the horizons. The 'A', 'S', 'W' and 'D' keys can be used (along 
+	      with the mouse or cursor keys) to move the camera. Emitters are rendered 
+	      using billboarded quads. </p>
+	    <p> The code design includes a manager object and a base emitter type from 
+	      which firework emitter types are derived. It is envisaged that this application 
+	      will be used as a test container to develop other types 
+	      of particle based effects such as smoke effects using vortex particles. 
+	    </p>
+	    <span style="position: relative; left: 650px;"> <a class="mainLinkStyle" href="PortfolioPersonal.htm"><< 
+	    Back</a> </span> <br>
+	    <a class=mainLinkStyle href="downloads/GMFireworks.rar">Download demo here</a> <br>
+	    <a class=mainLinkStyle href="downloads/fw_src.rar">Download source code here</a> <br>
+	    <hr>
+	    <br>
+  </div>
+
+  <div id="footer"> <span style="position: relative; top: 25%; font-size: .8em;">Updated June 2014</span> </div>
+
+</div>
+
+
+</body>
+
+</html>
